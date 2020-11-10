@@ -82,6 +82,15 @@ public class TestRepresentant {
 		}
 
 	}
+       
+        @Test
+        public void salaire(){
+            r.setSalaireFixe(2000f);
+            assertEquals(2000f, r.getSalaireFixe(), "Salaire mal initialisé");
+            
+        
+        }
+
 	
 	
 }
