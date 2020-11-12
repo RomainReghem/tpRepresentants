@@ -87,10 +87,30 @@ public class TestRepresentant {
         public void salaire(){
             r.setSalaireFixe(2000f);
             assertEquals(2000f, r.getSalaireFixe(), "Salaire mal initialisé");
-            
-        
         }
-
-	
-	
+        
+        @Test
+        public void testGetNumero(){
+            assertEquals(36, r.getNumero(), "ce n'est pas le bon numéro qui est donné");    
+        }
+        
+        @Test
+        public void testGetNom(){
+            assertEquals("Bastide", r.getNom(), "ce n'est pas le bon nom qui est donné");    
+        }
+        
+        @Test
+        public void testGetPrenom(){
+            assertEquals("Rémi", r.getPrenom(), "ce n'est pas le bon prénom qui est donné");    
+        }
+        
+        @Test
+        public void testGetAdresse(){
+            r.setAdresse("18 rue de l'adresse");
+            assertEquals("18 rue de l'adresse", r.getAdresse(), "ce n'est pas la bonne adresse qui est donnée");    
+        }
+	@Test
+        public void testGetSecteur(){
+            assertEquals(occitanie, r.getSecteur(), "ce n'est pas le bon secteur qui est donné");
+        }
 }
